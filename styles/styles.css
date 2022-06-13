@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+body, ul, li, h1, h2, main, footer, html{
+  margin:0;
+  padding: 0;
+  max-width: 100%;
+ 
+}
+html {
+  background-color:rgb(214, 203, 197);
+  font-family: 'Radio Canada', 'Roboto', sans-serif;
+}
+header {
+  background-color:darksalmon;
+  padding: 25px 15px;
+  width: 100%;
+  top:0;
+  left:0;
+  position:fixed;
+  z-index: 1;
+  text-align: center;
+}
+header h1 {
+  font-size:15px;
+  border: 4px solid white;
+  display: inline-block;
+  padding: 2px 15px;
+  color:white;
+  border-radius: 40px;
+  text-transform: uppercase;
+
+}
+.banner {
+position: relative;
+margin: 0px auto;
+}
+.banner img {
+  max-width: 100%;
+}
+.welcome {
+  position: absolute;
+  top:30%;
+  left:10%;
+  color:wheat
+}
+
+.welcome h2 {
+  font-size: 3rem;
+  color:wheat
+}
+.welcome h2 span{
+  font-size: 1.5em;
+  display: block;
+}
+
+nav{
+  background-color: rgba(63, 61, 122, 0.891);
+  position: sticky;
+  padding: 10px;
+  width: 100%;
+  top:80px;
+
+}
+
+nav ul {
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 3px auto;
+  text-align: center;
+}
+nav li{
+  list-style-type: none;
+  display:inline-block;
+  width:25%; 
+  font-size: 20px;
+}
+nav ul li a {
+  color:white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color:salmon
+}
+
+
+nav .fun-stuff {
+  color:salmon
+}
+
+a {
+  display: block;
+}
+
+main {
+  max-width: 100%;
+  width: 1000px;
+  margin: 30px auto;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+h2 {
+  color:darksalmon;
+  font-size: 32px ;
+}
+
+p{
+  line-height: 2em;
+}
+
+p:active {
+  color:hsl(15, 72%, 40%);
+}
+.imageList {
+  text-align: center;
+  margin: 80px 0; 
+  white-space: nowrap;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.imageList li {
+  display: inline-block;
+  width: 40%;
+  margin: 10px 5%;
+}
+
+.imageList li img {
+  max-width: 100%;
+}
+
+.imageList li:hover {
+  position: relative;
+  border-radius: 40px;
+  top:-3px;
+  right:-4px;
+  scale: 4px;
+}
+.contact {
+  background: hsl(15, 72%, 90%);
+  text-align:center;
+  padding: 20px 10px;
+  padding-top: 80px;
+  
+}
+
+.contact .emailInput {
+  margin: 20px 0px;
+  padding: 10px 20px;
+  padding: 4px solid wheat;
+  border-radius: 30px;
+}
+
+.contact .emailInput:focus {
+  border: 4px solid salmon;
+}
+
+.contact .emailInput:valid {
+  border: 5px solid green;
+}
+
+footer{
+  background:salmon;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+article p::first-line {
+  font-size: large;
+}
+
+.contact p::first-letter {
+  font-size: 3em ;
+}
+
+p::selection{
+  font-size: small;
+  background-color:hsl(25, 76%, 68%)
+}
+
+p::after{
+content:'....'
+}
+
+@media screen and (max-width:700px){
+  .welcome {
+    background:hsl(6, 93%, 79%);
+    top:0;
+    left:0;
+    text-align: center;
+    position: relative;
+  }
+
+  .welcome h2 {
+    font-size: 1.5rem;
+    color:wheat;
+    width: 90%;
+  }
+  .welcome h2 span{
+  display: inline;
+
+  }
+  
+  .imageList li {
+    width: 100%;
+    display: block;
+  }
+  .imageList li img {
+    border-radius: 30px
+  }
+}
+
+@media screen and (max-width:550px) {
+  .main-nav{
+   top:0;
+  }
+  .main-nav li {
+    font-size: small;
+    display: block;
+    width: 100%;
+    margin: 12px 2px;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  .imageList li img {
+    border-radius: 30px
+  }
+}
+
+/* Flex Box example */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 2080px;
+}
+.flexContainer{
+/* with float every element collapses to height */
+  display: flex;
+  background-color:hwb(0 86% 14%);
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  /* flex-wrap: wrap;  */
+  /* flex-direction: column; */
+  /* flex:1 0 150px; */
+}
+
+
+/* .flexContainer:after{
+  content:"dummy String";
+  display: block;
+  clear:both;
+  
+} */
+
+
+.fb {
+  padding:20px;
+  text-align: center;
+  width: 40px;
+}
+
+.flexContainer .box1 {
+background-color:hsl(78, 25%,30%)
+}
+.flexContainer .box2 { 
+
+background-color:hsl(78, 25%, 40%)
+}
+.flexContainer .box3 {
+  background-color:hsl(78, 25%, 50%)
+}
+.flexContainer .box4 {
+
+  background-color:hsl(78, 25%, 60%)
+}
+.flexContainer .box5 {
+
+  background-color:hsl(78, 25%, 70%)
+}
+.flexContainer .box6 {
+  background-color:hsl(78, 25%, 80%);
+}
+
+
+@media screen and (max-width:600px){
+
+.flexContainer{
+  flex-direction: column;
+
+}
+
+.flexContainer .box1 {
+  background:red;
+}
+}
+
+/* @media screen and (min-width:950px){
+  _
+  .flexContainer{
+    display: flex;
+  }
+  .fb {
+    flex-grow:1 1 0;
+  }
+} */
+
+.main-mobile {
+  padding: 10px;
+  padding-top: 90px;
+  text-align: center;
+  background-color:lightblue;
+  min-height: 500px;
+}
+
+.flexClass {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
