@@ -29,11 +29,11 @@ var apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${myApiKey}&q=taco&li
 var mainElement = getElementById("main");
 
 
-window.matchMedia('(max-height: 800px)').addListener(function(mediaQuery) {
-  mediaQuery.matches ? main.classList.remove("main-mobile") :  main.classList.add("main-mobile");
+window.matchMedia('(max-height: 800px)').addListener(function (mediaQuery) {
+  mediaQuery.matches ? main.classList.remove("main-mobile") : main.classList.add("main-mobile");
 });
 
-function getElementById (value){
+function getElementById(value) {
   return document.getElementById(value);
 }
 function renderContent(content) {
@@ -46,27 +46,27 @@ let search = document.getElementById('gifer');
 search.addEventListener('keyup', renderGif);
 
 
-function renderGif(e){
+function renderGif(e) {
   mainElement.innerHTML = '';
   var value = e.target.value
   console.log(value)
   var apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${myApiKey}&q=${value}&limit=15`
   fetch(apiUrl)
-  .then(function (resp) { return resp.json()})
-  .then(results => renderResult(results))
+    .then(function (resp) { return resp.json() })
+    .then(results => renderResult(results))
 }
 
 
 
 
-function  renderResult(result) {
+function renderResult(result) {
   var data = result.data;
-  for(var i=0; i< data.length; i++){
+  for (var i = 0; i < data.length; i++) {
     renderContent(`<img src= ${data[i].images.original.url}>`)
   }
 }
 
-
+//askdfkadjfkdjsfdjfkdjdkjf
 
 
 
@@ -84,7 +84,7 @@ function  renderResult(result) {
 //   getData(searchUrl);
 
 // });
- 
+
 // function getData(params) {
 //   fetch(params)
 //    .then(response => response.json())
@@ -121,7 +121,7 @@ function  renderResult(result) {
 
 
 
-  // E19eYiCV0AQhSZuiySSelZTTqnY93wDM
+// E19eYiCV0AQhSZuiySSelZTTqnY93wDM
 //title 
 // 
 
@@ -270,3 +270,137 @@ function  renderResult(result) {
 console.log('heeleeelloooo')
 // this is soooo random lol
 // 404 randooossss
+
+
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
+
+
+
+
+
+
+/**
+ * KAJSDFLKAJSDFKLAJSDF
+ * ASDFKADSFA
+ * SDF
+ * AS
+ * DF
+ * ASD
+ * FASDF
+ * ASD
+ * FA
+ * SDFASD
+ * FA
+ * SD
+ */
