@@ -67,7 +67,7 @@ function  renderResult(result) {
 }
 
 
-
+console.log("pepperoni pizza with chocolate is the next best thing since sliced bread!!!!");
 
 
 // get value from input field and add to url to get data from giphy api
